@@ -7,7 +7,7 @@ const About = () => {
         <div className='center'>
           <h4>About MBF</h4>
           <p style={{ textAlign: 'justify' }}>
-            MBF is a non-profit, non-Religious/non-description, and Individuals Supported Faith based Organization whose Mission is to provide Fonchbegkin - Fondness for all people (genuine compassion of heart for all human kind, regardless of colour, creed, national origin, economic condition, etc); Charity Benevolence; Genetrosity and Kindness(love, care, helps) to the oppressed, undeserved, the "Needy Poor", the childless aged, the less-privileged/less-fortunate, the widows "indeed" the fatherless, orphans, among others.
+            MBF is a non-profit, non-description, and Individuals Supported Faith based Organization whose Mission is to provide Fonchbegkin - Fondness for all people (genuine compassion of heart for all human kind, regardless of colour, creed, national origin, economic condition, etc); Charity Benevolence; Genetrosity and Kindness(love, care, helps) to the oppressed, undeserved, the "Needy Poor", the childless aged, the less-privileged/less-fortunate, the widows "indeed" the fatherless, orphans, among others.
 
           </p>
           <div className='col s12 m3'>
@@ -101,11 +101,11 @@ const About = () => {
         <h4>DESCRIPTION</h4>
         <div style={{ textAlign: 'justify' }}>
           <p>
-            MBF is a God/Heaven given vision to our Team members to be use as  livin vessels to demonstrate God's Benevolence on earth, to put in practice - care, helps, encouragement to the needy, the poor  and the oppressed, and to share "others" burden by deeds of goodwill and kindness.
+            MBF is a God given vision to our Team members to be use as  livin vessels to demonstrate God's Benevolence on earth, to put in practice - care, helps, encouragement to the needy, the poor  and the oppressed, and to share "others" burden by deeds of goodwill and kindness.
           </p>
           <p>The focus; God is the source of missions and human means are needed in mission - no man can be truly rich who is selfish.</p>
           <p>This form the basis of our association, partnership and relationship with any ministry or group.</p>
-          <p>The "ma"a lot' is an annual program for MBF members to start every New Year as part of our means of fulfilling our divine mandate. Other activities of MBF include;</p>
+          <p>The Ma'a lot' is an annual program for MBF members to start every New Year as part of our means of fulfilling our divine mandate. Other activities of MBF include;</p>
           <p>Every Thursday, is the Hour of Manifestation a week devotional fellowship</p>
           <p>The Maundy Thursday; an annual Thursday fellowship, the evening that proceed the GOOD Friday is marked with a LOVE FEAST;</p>
           <p>The Affable Summit is also an annual programmed for members stewardship;</p>

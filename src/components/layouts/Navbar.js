@@ -28,12 +28,14 @@ const Navbar = () => {
               to='/'
               className='brand-logo show-on-small hide-on-med-and-up'
             >
-              MCBFs
+              MBF
             </Link>
 
             <Link to='/' data-target='mobile-demo' className='sidenav-trigger'>
               <i className='material-icons'>menu</i>
             </Link>
+            <img src={logo} alt="logo" height="64px" width="80px" />
+
             <ul id='nav-mobile' className='right hide-on-med-and-down'>
               <li>
                 <Link to='/'>Home</Link>
