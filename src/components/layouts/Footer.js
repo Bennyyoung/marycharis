@@ -49,6 +49,19 @@ const Footer = () => {
                 <br />© {new Date().getFullYear()} MARYCHARIS BENEVOLENCE FOUNDATION Inc. All rights
                 reserved.
               </div>
+              <ul>
+                <li>
+                  <Link className='grey-text text-lighten-3' to='/'>
+                    FAQ
+                  </Link>
+                </li>
+
+                <li>
+                  <Link className='grey-text text-lighten-3' to='/about'>
+                    Terms and Condtions
+                  </Link>
+                </li>
+              </ul>
               <div className='col s6'>
                 <br />
                 <a href='http://www.bloomhubng.com/'>

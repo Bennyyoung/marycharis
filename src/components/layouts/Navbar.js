@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <header>
       <div className='navbar-fixed '>
-        <nav style={{backgroundColor: '#ce5ffc'}}>
+        <nav style={{ backgroundColor: '#ce5ffc' }}>
           <div className='nav-wrapper'>
             <Link to='/' className='brand-logo hide-on-small-only'>
               <div style={{ display: 'flex' }}>
@@ -16,10 +16,10 @@ const Navbar = () => {
                 </div>
                 <div style={{ width: '90%' }}>
 
-                  <h5 style={{ paddingLeft: '2rem' }}>
+                  <h6 style={{ paddingLeft: '5rem' }}>
 
                     MARYCHARIS BENEVOLENCE FOUNDATION
-                  </h5>
+                  </h6>
                 </div>
 
               </div>
@@ -34,7 +34,7 @@ const Navbar = () => {
             <Link to='/' data-target='mobile-demo' className='sidenav-trigger'>
               <i className='material-icons'>menu</i>
             </Link>
-            <img src={logo} alt="logo" height="64px" width="80px" />
+            <img src={logo} alt="logo" height="55px" width="80px" />
 
             <ul id='nav-mobile' className='right hide-on-med-and-down'>
               <li>
@@ -42,6 +42,12 @@ const Navbar = () => {
               </li>
               <li>
                 <Link to='/about'>About</Link>
+              </li>
+              <li>
+                <Link to='/contact'>Contact Us</Link>
+              </li>
+              <li>
+                <Link to='/donate'>Donate</Link>
               </li>
 
             </ul>
@@ -54,6 +60,12 @@ const Navbar = () => {
         </li>
         <li>
           <Link to='/about'>About</Link>
+        </li>
+        <li>
+          <Link to='/contact'>Contact Us</Link>
+        </li>
+        <li>
+          <Link to='/donate'>Donate</Link>
         </li>
 
       </ul>

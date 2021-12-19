@@ -10,7 +10,7 @@ const About = () => {
             MBF is a non-profit, non-description, and Individuals Supported Faith based Organization whose Mission is to provide Fonchbegkin - Fondness for all people (genuine compassion of heart for all human kind, regardless of colour, creed, national origin, economic condition, etc); Charity Benevolence; Genetrosity and Kindness(love, care, helps) to the oppressed, undeserved, the "Needy Poor", the childless aged, the less-privileged/less-fortunate, the widows "indeed" the fatherless, orphans, among others.
 
           </p>
-          <div className='col s12 m3'>
+          <div className='col s12 m6'>
             <div
               className='card blue-grey darken-1'
             >
@@ -25,7 +25,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className='col s12 m3'>
+          <div className='col s12 m6'>
             <div
               className='card blue-grey darken-1'
             >
@@ -41,7 +41,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className='col s12 m3'>
+          <div className='col s12 m6'>
             <div
               className='card blue-grey darken-1'
             >
@@ -57,7 +57,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className='col s12 m3'>
+          <div className='col s12 m6'>
             <div
               className='card blue-grey darken-1'
             >

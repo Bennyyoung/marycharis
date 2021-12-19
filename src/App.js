@@ -16,6 +16,8 @@ import Qurbani from './components/pages/Qurbani';
 
 import 'materialize-css/dist/css/materialize.min.css';
 import M from 'materialize-css/dist/js/materialize.min.js';
+import ContactUs from './components/pages/ContactUs';
+import Donate from './components/pages/Donate';
 
 const App = () => {
   useEffect(() => {
@@ -28,6 +30,9 @@ const App = () => {
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/about' component={About} />
+        <Route exact path='/contact' component={ContactUs} />
+        <Route exact path="/donate" component={Donate}/>
+
         <Route exact path='/message' component={Message} />
         <Route exact path='/education' component={Education} />
         <Route exact path='/foodbank' component={FoodBank} />
