@@ -38,6 +38,21 @@ const Footer = () => {
                     About
                   </Link>
                 </li>
+                <li>
+                  <Link className='grey-text text-lighten-3' to='/about'>
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link className='grey-text text-lighten-3' to='/about'>
+                    Contact Us
+                  </Link>
+                </li>
+                <li>
+                  <Link className='grey-text text-lighten-3' to='/about'>
+                    Donate
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -45,10 +60,12 @@ const Footer = () => {
         <div style={{ backgroundColor: '#ce5ffc' }} className='footer-copyright'>
           <div className='container'>
             <div className='row'>
-              <div className='col s6'>
+              <div className='col s6 m6 l6'>
                 <br />© {new Date().getFullYear()} MARYCHARIS BENEVOLENCE FOUNDATION Inc. All rights
                 reserved.
               </div>
+              <h5 className='white-text'>Other links</h5>
+
               <ul>
                 <li>
                   <Link className='grey-text text-lighten-3' to='/'>
@@ -62,7 +79,7 @@ const Footer = () => {
                   </Link>
                 </li>
               </ul>
-              <div className='col s6'>
+              <div className='col s6 m6 l6'>
                 <br />
                 <a href='http://www.bloomhubng.com/'>
 

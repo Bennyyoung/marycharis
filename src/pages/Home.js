@@ -1,10 +1,5 @@
 import React from 'react';
-
-import Banner from '../layouts/Banner';
-import AidTracker from '../layouts/AidTracker';
-import Campaign from '../layouts/Campaign';
-import CardBlock from '../layouts/CardBlock';
-import Quote from '../layouts/Quote';
+import { Banner, AidTracker, CardBlock } from '../components/layouts'
 
 const Home = () => {
   return (

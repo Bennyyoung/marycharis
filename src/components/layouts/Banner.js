@@ -1,7 +1,4 @@
 import React from 'react';
-import backgroundImg from '../../data/img/banner/backgroundImg.png';
-import backgroundImg2 from '../../data/img/banner/backgroundImg2.png';
-import backgroundImg3 from '../../data/img/banner/backgroundImg3.png';
 import one from '../../data/img/banner/1.jpg';
 import two from '../../data/img/banner/2.jpg';
 import three from '../../data/img/banner/3.jpg';
@@ -15,7 +12,7 @@ import convener_pointing_banner from '../../data/img/banner/convener_pointing_ba
 const Banner = () => {
   return (
     <div>
-      <div className='slider'>
+      {/* <div className='slider'>
         <ul className='slides'>
           <li>
             <img src={one} alt='' style={{ opacity: '0.5' }} />
@@ -55,8 +52,35 @@ const Banner = () => {
           </li>
           
         </ul>
-      </div>
+      </div> */}
       <br />
+
+      {/* <div className="carousel carousel-slider center">
+        <a className="carousel-item" href="#one!"><img src={one} alt='' style={{ opacity: '0.5' }} /></a>
+        <a className="carousel-item" href="#two!"><img src={two} alt='' style={{ opacity: '0.5' }} /></a>
+        <a className="carousel-item" href="#three!"><img src={three} alt='' style={{ opacity: '0.5' }} /></a>
+        <a className="carousel-item" href="#four!"><img src={four} alt='' style={{ opacity: '0.5' }} /></a>
+        <a className="carousel-item" href="#five!"><img src={five} alt='' style={{ opacity: '0.5' }} /></a>
+      </div> */}
+
+      <div className="carousel carousel-slider center">
+        <div className="carousel-item">
+          <img src={one} alt='' style={{maxWidth: '100%', maxHeight: '100%', height: 'auto', width: 'auto', objectFit: 'contain'}} />
+        </div>
+        <div className="carousel-item " href="#one!">
+
+          <img src={two} alt='' style={{maxWidth: '100%', maxHeight: '100%', height: 'auto', width: 'auto', objectFit: 'contain'}} />
+        </div>
+        <div className="carousel-item" href="#two!">
+
+          <img src={three} alt='' style={{maxWidth: '100%', maxHeight: '100%', height: 'auto', width: 'auto', objectFit: 'contain'}} />
+        </div>
+        <div className="carousel-item" href="#three!">
+
+          <img src={five} alt='' style={{maxWidth: '100%', maxHeight: '100%', height: 'auto', width: 'auto', objectFit: 'contain'}} />
+        </div>
+      </div>
+
     </div>
   );
 };

@@ -3,7 +3,7 @@ import React from 'react'
 export default function Donate() {
  return (
   <div className="row">
-   <div className="col s12 m6 l5" style={{paddingLeft: '3rem'}}>
+   <div className="col s12 m6 l6" style={{paddingLeft: '3rem'}}>
     <h4><strong>Support our work</strong></h4>
     <p>MBF is a non-profit, non-description, and Individuals Supported Faith based Organization whose Mission is to provide Fonchbegkin - Fondness for all people (genuine compassion of heart for all human kind, regardless of colour, creed, national origin, economic condition, etc).</p>
     <p>You too can be part of this positive change</p>
@@ -22,7 +22,7 @@ export default function Donate() {
 
    </div>
 
-   <div className="col s12 m6 l5">
+   <div className="col s12 m6 l6">
     <h4 style={{ padding: '6rem 0 1rem 0' }}><strong>Donate</strong></h4>
     <div className="row">
      <div className="col s12 m6 l4">
