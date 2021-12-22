@@ -6,21 +6,23 @@ export default function ContactUs() {
    <div className="col s12 m6 l7">
     <h2><strong>Get in touch</strong></h2>
     <address>
-    <p>MARYCHARIS BENEVOLENCE FOUNDATION</p>
-    <p><strong>Phone no 1: </strong>070 5501-8922</p>
-    <p><strong>Phone no 2: </strong>091-3444-5646</p>
-    <p><strong>Email: </strong>[Email]</p>
+     <p>MARYCHARIS BENEVOLENCE FOUNDATION</p>
+     <p><strong>Phone no 1: </strong>070 5501-8922</p>
+     <p><strong>Phone no 2: </strong>091-3444-5646</p>
+     <p><strong>Phone no 3: </strong>0803 246 1474
+     </p>
+     <p><strong>Email: </strong>[Email]</p>
 
-    <p><strong>Address: </strong><span>MBF Secretariat Phase 2 Block F plot 5b Magbon,Imeke, off - Aradangu Iworo-Ajido Road, Badagry Lagos.</span></p>
-    <p><strong>Address 2: </strong><span>Annex - Plot 19 Ajisola Oladapo street, Opp ojo Military Cantoment, Ojo Lagos.</span></p>
-    
-    <p><strong>PO Box: </strong><span>P.O Box 2574 Festac Town  Lagos.</span></p>
+     <p><strong>Address: </strong><span>MBF Secretariat Phase 2 Block F plot 5b Magbon,Imeke, off - Aradangu Iworo-Ajido Road, Badagry Lagos.</span></p>
+     <p><strong>Address 2: </strong><span>Annex - Plot 19 Ajisola Oladapo street, Opp ojo Military Cantoment, Ojo Lagos.</span></p>
+
+     <p><strong>PO Box: </strong><span>P.O Box 2574 Festac Town  Lagos.</span></p>
 
     </address>
    </div>
 
 
-   <div className="col s12 m6 l5" style={{marginTop: '20px'}}>
+   <div className="col s12 m6 l5" style={{ marginTop: '20px' }}>
     <div className="row">
      <form className="col s12">
       <div className="row">

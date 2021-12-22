@@ -65,19 +65,19 @@ const Banner = () => {
 
       <div className="carousel carousel-slider center">
         <div className="carousel-item">
-          <img src={one} alt='' style={{maxWidth: '100%', maxHeight: '100%', height: 'auto', width: 'auto', objectFit: 'contain'}} />
+          <img src={one} alt='' style={{maxWidth: '100%', maxHeight: '100%', height: 'auto', width: 'auto', objectFit: 'cover'}} />
         </div>
         <div className="carousel-item " href="#one!">
 
-          <img src={two} alt='' style={{maxWidth: '100%', maxHeight: '100%', height: 'auto', width: 'auto', objectFit: 'contain'}} />
+          <img src={two} alt='' style={{maxWidth: '100%', maxHeight: '100%', height: 'auto', width: 'auto', objectFit: 'cover'}} />
         </div>
         <div className="carousel-item" href="#two!">
 
-          <img src={three} alt='' style={{maxWidth: '100%', maxHeight: '100%', height: 'auto', width: 'auto', objectFit: 'contain'}} />
+          <img src={three} alt='' style={{maxWidth: '100%', maxHeight: '100%', height: 'auto', width: 'auto', objectFit: 'cover'}} />
         </div>
         <div className="carousel-item" href="#three!">
 
-          <img src={five} alt='' style={{maxWidth: '100%', maxHeight: '100%', height: 'auto', width: 'auto', objectFit: 'contain'}} />
+          <img src={five} alt='' style={{maxWidth: '100%', maxHeight: '100%', height: 'auto', width: 'auto', objectFit: 'cover'}} />
         </div>
       </div>
 
