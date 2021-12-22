@@ -13,7 +13,7 @@ export default function ContactUs() {
      </p>
      <p><strong>Email: </strong>[Email]</p>
 
-     <p><strong>Address: </strong><span>MBF Secretariat Phase 2 Block F plot 5b Magbon,Imeke, off - Aradangu Iworo-Ajido Road, Badagry Lagos.</span></p>
+     <p><strong>Address: </strong><span>MBF Secretariat Phase 2 Block F plot 5b Magbon,Imeke, off - Aradagun Iworo-Ajido Road, Badagry Lagos.</span></p>
      <p><strong>Address 2: </strong><span>Annex - Plot 19 Ajisola Oladapo street, Opp ojo Military Cantoment, Ojo Lagos.</span></p>
 
      <p><strong>PO Box: </strong><span>P.O Box 2574 Festac Town  Lagos.</span></p>
