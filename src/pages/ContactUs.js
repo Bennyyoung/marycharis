@@ -24,14 +24,21 @@ export default function ContactUs() {
     <div className="row">
      <form className="col s12">
       <div className="row">
+       <div className="row">
+        <div className="input-field col s12">
+         <input placeholder="Name" id="name" type="text" id="name" type="text" className="active validate" required />
+        </div>
 
-       <div className="input-field col s12">
-        <input placeholder="Name" id="name" type="text" id="name" type="text" className="active validate" required />
        </div>
 
-       <div className="input-field col s12">
-        <input placeholder="Email" id="email" type="email" className="validate" required />
+       <div className="row">
+        <div className="input-field col s12">
+         <input placeholder="Email" id="email" type="email" className="validate" required />
+        </div>
+
        </div>
+
+
 
        <div className="row">
         <div className="input-field col s12">
