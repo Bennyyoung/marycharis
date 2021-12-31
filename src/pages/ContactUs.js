@@ -9,11 +9,9 @@ export default function ContactUs() {
      <p>MARYCHARIS BENEVOLENCE FOUNDATION</p>
      <p><strong>Phone no 1: </strong>070 5501-8922</p>
      <p><strong>Phone no 2: </strong>091-3444-5646</p>
-     <p><strong>Phone no 3: </strong>0803 246 1474
-     </p>
-     <p><strong>Email: </strong>[Email]</p>
+     <p><strong>Email: </strong>marycharisfoundation@gmail.com</p>
 
-     <p><strong>Address: </strong><span>MBF Secretariat Phase 2 Block F plot 5b Magbon,Imeke, off - Aradagun Iworo-Ajido Road, Badagry Lagos.</span></p>
+     <p><strong>Address: </strong><span>MBF Secretariat Phase 2 Block F plot 5b Magbon, Imeke, off - Aradagun Iworo-Ajido Road, Badagry Lagos.</span></p>
      <p><strong>Address 2: </strong><span>Annex - Plot 19 Ajisola Oladapo street, Opp ojo Military Cantoment, Ojo Lagos.</span></p>
 
      <p><strong>PO Box: </strong><span>P.O Box 2574 Festac Town  Lagos.</span></p>
