@@ -5,6 +5,8 @@ const About = () => {
     <main className="container">
       <div className="row">
         <div className='center'>
+
+
           <h4>About MBF</h4>
           <p style={{ textAlign: 'justify' }} className="flow-text">
             <b>MBF</b> is a non-profit, non-political, dispositioned to do good, charitable, kind, altruistic, individual (s) and groups supported, faith based organization, dedicated to providing needed humanitarian care and to assist the less-privileged, widows, fatherless and orphans (minor) and vulnerable.

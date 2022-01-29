@@ -44,16 +44,13 @@ const Navbar = () => {
                 <Link to='/about'>About</Link>
               </li>
               <li>
-                <Link to='/member'>Become a Member</Link>
-              </li>
-              <li>
-                <Link to='/volunteer'>Volunteer</Link>
-              </li>
-              <li>
-                <Link to='/contact'>Contact Us</Link>
+                <Link to='/become-a-member'>Join Us</Link>
               </li>
               <li>
                 <Link to='/donate'>Donate</Link>
+              </li>
+              <li>
+                <Link to='/contact'>Contact Us</Link>
               </li>
 
             </ul>
@@ -68,16 +65,16 @@ const Navbar = () => {
           <Link to='/about'>About</Link>
         </li>
         <li>
-          <Link to='/member'>Become a Member</Link>
+          <Link to='/become-a-member'>Join Us</Link>
         </li>
         <li>
           <Link to='/volunteer'>Volunteer</Link>
         </li>
         <li>
-          <Link to='/contact'>Contact Us</Link>
+          <Link to='/donate'>Donate</Link>
         </li>
         <li>
-          <Link to='/donate'>Donate</Link>
+          <Link to='/contact'>Contact Us</Link>
         </li>
 
       </ul>

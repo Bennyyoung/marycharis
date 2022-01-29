@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Home, About, ContactUs, Donate, FAQ } from './pages'
+import { Home, About, ContactUs, Donate, FAQ, BecomeAMember } from './pages'
 
 import Navbar from './components/layouts/Navbar';
 import Footer from './components/layouts/Footer.js';
@@ -21,8 +21,9 @@ const App = () => {
       <Navbar />
       <Switch>
         <Route exact path='/' component={Home} />
-        <Route exact path='/about' component={About} />
         <Route exact path='/contact' component={ContactUs} />
+        <Route exact path='/become-a-member' component={BecomeAMember} />
+        <Route exact path='/about' component={About} />
         <Route exact path="/donate" component={Donate}/>
         <Route exact path="/faq" component={FAQ}/>
 
