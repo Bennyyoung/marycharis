@@ -4,26 +4,100 @@ import { Player, BigPlayButton, LoadingSpinner } from 'video-react';
 
 export default function HomeMedia() {
  return (
-  <div className="container">
-   <h4 className="center">Videos You May Like</h4>
-   <div className="col s12 m6 l6">
-    <div className="row">
-     <div classsName="col s12 m6 l4">
-      <h6><strong>@MaryCharisBF (NGO) TABLE FELLOWSHIP 30/12/2021</strong></h6>
-      <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fweb.facebook.com%2FMARYCHARISBENEVOLENTFOUNDATION%2Fvideos%2F378643177359458%2F&show_text=false&width=560&t=0" width="500" height="314" style={{ border: 'none', overflow: 'hidden' }} scrolling="no" frameBorder="0" allowFullScreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+  <div>
+   <h4 className="center">Testimonials and More</h4>
+
+   <div className="row">
+    <div className='col m4 s12'>
+     <div
+
+      style={{ width: '320px' }}
+     >
+      <div className='card-content white-text'>
+       <iframe width="300" height="214" src="https://www.youtube.com/embed/lBA2sk5s7mQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
      </div>
+    </div>
+    <div className='col m4 s12'>
+     <div
 
-     <div classsName="col s12 m6 l4">
-      <h6><strong>TABLE FELLOWSHIP 30/12/2021</strong></h6>
-
-      <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fweb.facebook.com%2FMARYCHARISBENEVOLENTFOUNDATION%2Fvideos%2F642953363555305%2F&show_text=false&width=560&t=0" width="500" height="314" style={{ border: 'none', overflow: 'hidden' }} scrolling="no" frameborder="0" allowFullScreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+      style={{ height: '250px' }}
+     >
+      <div className='card-content white-text'>
+       <iframe width="300" height="214" src="https://www.youtube.com/embed/9unejYjXTzs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
      </div>
+    </div>
+    <div className='col m4 s12'>
+     <div
 
-     <div classsName="col s12 m6 l4">
-      <h6><strong>GO WHERE THEY ARE MISSIONS  - AFROMEDIA/AJANGBADI & <br /> ILADO, LAGOS COMMUNITIES.</strong></h6>
-      <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fweb.facebook.com%2FMARYCHARISBENEVOLENTFOUNDATION%2Fvideos%2F315482013801424%2F&show_text=false&width=560&t=0" width="500" height="314" style={{ border: 'none', overflow: 'hidden' }} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+      style={{ height: '250px' }}
+     >
+
+
+      <iframe width="300" height="214" src="https://www.youtube.com/embed/R2oD60XIY90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
      </div>
+    </div>
+   </div>
 
+   <div className="row">
+    <div className='col m4 s12'>
+     <div
+
+      style={{ height: '250px' }}
+     >
+      <iframe width="300" height="214" src="https://www.youtube.com/embed/R2oD60XIY90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </div>
+    </div>
+
+    <div className='col m4 s12'>
+     <div
+      style={{ height: '250px' }}
+     >
+      <iframe width="300" height="214" src="https://www.youtube.com/embed/kMAycPmX4Bc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </div>
+    </div>
+    <div className='col m4 s12'>
+     <div
+      style={{ height: '250px' }}
+     >
+      <iframe width="300" height="214" src="https://www.youtube.com/embed/LC4upuexjx8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </div>
+    </div>
+    <div className='col m4 s12'>
+     <div
+      style={{ height: '250px' }}
+     >
+      <iframe width="300" height="214" src="https://www.youtube.com/embed/Mu0KX_Yf4pw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </div>
+    </div>
+    <div className='col m4 s12'>
+     <div
+      style={{ height: '250px' }}
+     >
+      <iframe width="300" height="214" src="https://www.youtube.com/embed/kMAycPmX4Bc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </div>
+    </div>
+    <div className='col m4 s12'>
+     <div
+      style={{ height: '250px' }}
+     >
+      <iframe width="300" height="214" src="https://www.youtube.com/embed/DUQJkhQxUrw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </div>
+    </div>
+    <div className='col m4 s12'>
+     <div
+      style={{ height: '250px' }}
+     >
+      <iframe width="300" height="214" src="https://www.youtube.com/embed/_dfcU-h-VGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </div>
+    </div>
+    <div className='col m4 s12'>
+     <div
+      style={{ height: '250px' }}
+     >
+      <iframe width="300" height="214" src="https://www.youtube.com/embed/F0HNhJ-RxPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </div>
     </div>
    </div>
 

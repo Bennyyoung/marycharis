@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import datalchemyLogo from '../../data/img/footer/datalchemyLogo.png';
 import bloomhublogo from '../../data/img/footer/new_logo.jpg'
 import logo from '../../data/img/logo.jpg'
+import SocialMedia from '../SocialMedia'
 
 
 // Need to added correct .svg file
@@ -68,16 +69,20 @@ const Footer = () => {
 
               <ul>
                 <li>
-                  <Link className='grey-text text-lighten-3' to='/'>
+                  <Link className='grey-text text-lighten-3' to='/faq'>
                     FAQ
                   </Link>
                 </li>
 
                 <li>
                   <Link className='grey-text text-lighten-3' to='/about'>
-                    Terms and Condtions
+                    Terms and Condtion
                   </Link>
+
                 </li>
+                <li>
+                <SocialMedia />
+                  </li>
               </ul>
               <div className='col s6 m6 l6'>
                 <br />
