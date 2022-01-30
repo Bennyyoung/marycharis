@@ -2,12 +2,20 @@ import React, { useState } from 'react';
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
 import { useForm, ValidationError } from '@formspree/react';
+import { Link } from 'react-router-dom'
 
 const BecomeAMember = () => {
   const [value, setValue] = useState();
-  const [state, handleSubmit] = useForm("mknyjgez");
+  const [state, handleSubmit] = useForm("mqknpeln");
   if (state.succeeded) {
-    return <p>Thanks for joining</p>
+    return (
+    <div className="container">
+    <div style={{border: '2px solid black', backgroundColor: 'rgb(206, 95, 252)', margin: '3rem', padding: '3rem'}}>
+     <h2 style={{color: 'white'}}>Thank You For Your Submission</h2>
+     <button className="btn waves-effect waves-light"><Link style={{textDecoration: 'none', color: 'white', }} to="/"><span classsName="material-icons">Return Home</span></Link></button>
+    </div>
+   </div>
+   )
   }
   return <div className="container">
     <div className="col s12 m6 l5" style={{ marginTop: '20px' }}>
@@ -116,7 +124,7 @@ const BecomeAMember = () => {
             <div className="row">
               <div className="input-field col s12">
                 <label>Postal/Zip Code</label>
-                <input id="postal_zipcode" type="number" name="postal_zipcode" className="materialize-textarea" />
+                <input id="postal_zipcode" type="number" name="postal_zipcode"/>
                 <ValidationError
                   prefix="Postal/Zipcode"
                   field="postal_zipcode"
@@ -142,11 +150,11 @@ const BecomeAMember = () => {
               <p className="col m4 s12">
                 <label>
                   <input type="radio" name="Become A Volunteer" className="with-gap" />
-                  <ValidationError 
-        prefix="Become A Volunteer" 
-        field="become a volunteer"
-        errors={state.errors}
-      />
+                  <ValidationError
+                    prefix="Become A Volunteer"
+                    field="become a volunteer"
+                    errors={state.errors}
+                  />
                   <span>Become a Volunteer</span>
                 </label>
               </p>
@@ -156,6 +164,11 @@ const BecomeAMember = () => {
               <div className="input-field col s12">
                 <label>Kindly leave a Comment</label>
                 <input id="comments" name="comment" type="text" />
+                <ValidationError
+                  prefix="Comment"
+                  field="comment"
+                  errors={state.errors}
+                />
               </div>
             </div>
 

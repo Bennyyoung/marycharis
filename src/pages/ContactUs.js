@@ -1,6 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input'
+import { useForm, ValidationError } from '@formspree/react'
+import { Link } from 'react-router-dom'
 
 export default function ContactUs() {
+ const [value, setValue] = useState();
+ const [state, handleSubmit] = useForm("mlezjglv");
+ if (state.succeeded) {
+  return (
+   <div className="container">
+    <div style={{border: '2px solid black', backgroundColor: 'rgb(206, 95, 252)', margin: '3rem', padding: '3rem'}}>
+     <h2 style={{color: 'white'}}>Thank You For Your Submission</h2>
+     <button className="btn waves-effect waves-light"><Link style={{textDecoration: 'none', color: 'white', }} to="/"><span classsName="material-icons">Return Home</span></Link></button>
+    </div>
+   </div>
+  )
+ }
+
  return (
   <div className="container row">
    <div className="col s12 m6 l7">
@@ -22,33 +39,72 @@ export default function ContactUs() {
 
    <div className="col s12 m6 l5" style={{ marginTop: '20px' }}>
     <div className="row">
-     <form className="col s12">
+
+     <form className="col s12" onSubmit={handleSubmit}>
       <div className="row">
        <div className="row">
         <div className="input-field col s12">
-         <input placeholder="Name" id="name" type="text" id="name" type="text" className="active validate" required />
-        </div>
-
-       </div>
-
-       <div className="row">
-        <div className="input-field col s12">
-         <input placeholder="Email" id="email" type="email" className="validate" required />
-        </div>
-
-       </div>
-
-
-
-       <div className="row">
-        <div className="input-field col s12">
-         <textarea id="address" placeholder="Address" className="materialize-textarea"></textarea>
+         <label htmlFor="name">Name</label>
+         <input id="name" type="text" name="name" type="text" className="active validate" required />
+         <ValidationError
+          prefix="Name"
+          field="name"
+          errors={state.errors}
+         />
         </div>
        </div>
 
        <div className="row">
         <div className="input-field col s12">
-         <input placeholder="Comments" id="comments" type="text" />
+         <label htmlFor="email">Email</label>
+         <input id="email" type="email" className="validate" name="email" required />
+         <ValidationError
+          prefix="Email"
+          field="email"
+          errors={state.errors}
+         />
+        </div>
+       </div>
+
+
+
+       <div className="row">
+        <div className="input-field col s12">
+         <PhoneInput
+          international
+          value={value}
+          onChange={setValue}
+          name="phone_number" />
+         <ValidationError
+          prefix="Phone Number"
+          field="phone_number"
+          errors={state.errors}
+         />
+        </div>
+       </div>
+
+
+       <div className="row">
+        <div className="input-field col s12">
+         <label htmlFor="address">Address</label>
+         <textarea id="address" className="materialize-textarea" name="address"></textarea>
+         <ValidationError
+          prefix="Address"
+          field="address"
+          errors={state.errors}
+         />
+        </div>
+       </div>
+
+       <div className="row">
+        <div className="input-field col s12">
+         <label htmlFor="comments">Comments</label>
+         <input id="comments" type="text" name="comments" />
+         <ValidationError
+          prefix="Comments"
+          field="comment"
+          errors={state.errors}
+         />
         </div>
        </div>
 
