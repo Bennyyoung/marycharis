@@ -38,7 +38,7 @@ export default function Donate() {
        <div className="card-action">
         <button className="btn waves-effect waves-light" type="submit" name="action">Donate
         </button>
-        <strong>Suggested Amount:  ₦10,000</strong>
+        {/* <strong>Suggested Amount:  ₦10,000</strong> */}
        </div>
       </div>
      </div>

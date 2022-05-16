@@ -3,7 +3,7 @@ import AidTrackerItem from './AidTrackerItem';
 const AidTracker = () => {
   return (
     <div className='container center'>
-      <h1>What We Did</h1>
+      <h1>What We Have Done</h1>
       <br />
       <div className='row'>
         <AidTrackerItem icon='build' title='Wells Constructed' count='40' />
