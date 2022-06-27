@@ -15,12 +15,15 @@ export default function Donate() {
     <p>Account Name: <strong>First Bank Nigeria Plc</strong></p>
     <p>Account Name: <strong>MARYCHARIS BENEVOLENCE FOUNDATION</strong></p>
     <p>Account Number: <strong>2041654244</strong></p>
+    <br />
 
-    {/* <h6><strong>International Payments ( $ )</strong></h6>
-    <p><strong>[Bank Name]</strong></p>
-    <p>Account Name: <strong>[Account name]</strong></p>
-    <p>Account Number: <strong>[Account name]</strong></p> */}
-
+    <h6><strong>International Payments ( $ )</strong></h6>
+    <p><strong>FIRST BANK OF NIGERIA</strong></p>
+    <p>Account Name: <strong>MARYCHARIS BENEVOLENCE FOUNDATION</strong></p>
+    <p>IBAN/ACCOUNT NO: <strong>FBNINGLA</strong></p>
+    <p>SWIFT CODE: <strong>2041654244</strong></p>
+    <p>SORT CODE: <strong>011155229</strong></p>
+    <p>ADDRESS: <strong>35 SAMUEL ASABIA HOUSE, MARINA, LAGOS STATE, NIGERIA.</strong></p>
    </div>
 
    <div className="col s12 m6 l6">
