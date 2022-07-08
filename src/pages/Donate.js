@@ -1,4 +1,5 @@
 import React from 'react'
+import PaymentButton from '../components/PaymentButton'
 
 export default function Donate() {
  return (
@@ -27,21 +28,17 @@ export default function Donate() {
    </div>
 
    <div className="col s12 m6 l6">
-    <h4 style={{ padding: '6rem 0 1rem 0' }}><strong>Donate</strong></h4>
+    <h4 style={{ padding: '6rem 0 1rem 0' }}><strong>Donate (₦)</strong></h4>
     <div className="row">
      <div className="col s12 m6 l4">
       <div className="card">
        <div className="card-image">
-        <img src="images/sample-1.jpg" />
-
        </div>
        <div className="card-content">
-        <p>Support Inclusion for Persons with Disabilities</p>
+        <p>Support Inclusion for Child/Needy</p>
        </div>
        <div className="card-action">
-        <button className="btn waves-effect waves-light" type="submit" name="action">Donate
-        </button>
-        {/* <strong>Suggested Amount:  ₦10,000</strong> */}
+        <PaymentButton />
        </div>
       </div>
      </div>
@@ -49,16 +46,13 @@ export default function Donate() {
      <div className="col s12 m6 l4">
       <div className="card">
        <div className="card-image">
-        <img src="images/sample-1.jpg" />
 
        </div>
        <div className="card-content">
-        <p>Support Inclusion for Persons with Disabilities</p>
+        <p>Support for Upcoming Project</p>
        </div>
        <div className="card-action">
-        <button className="btn waves-effect waves-light" type="submit" name="action">Donate
-        </button>
-        {/* <strong>Suggested Amount:  ₦10,000</strong> */}
+        <PaymentButton />
        </div>
       </div>
      </div>
@@ -66,20 +60,89 @@ export default function Donate() {
      <div className="col s12 m6 l4">
       <div className="card">
        <div className="card-image">
-        <img src="images/sample-1.jpg" />
 
        </div>
        <div className="card-content">
-        <p>Support Inclusion for Persons with Disabilities</p>
+        <p>Save a child/scholarship</p>
        </div>
        <div className="card-action">
-        <button className="btn waves-effect waves-light" type="submit" name="action">Donate
-        </button>
-        {/* <strong>Suggested Amount:  ₦10,000</strong> */}
+        <PaymentButton />
+       </div>
+      </div>
+     </div>
+     <div className="col s12 m6 l4">
+      <div className="card">
+       <div className="card-image">
+
+       </div>
+       <div className="card-content">
+        <p>Grant</p>
+       </div>
+       <div className="card-action">
+       <PaymentButton />
        </div>
       </div>
      </div>
     </div>
+
+
+
+
+    {/*<h4 style={{ padding: '6rem 0 1rem 0' }}><strong>Donate ($)</strong></h4>
+    
+
+       </div>
+       <div className="card-content">
+        <p>Support Inclusion for Child/Needy</p>
+       </div>
+       <div className="card-action">
+        <PaymentButton />
+       </div>
+      </div>
+     </div>
+
+     <div className="col s12 m6 l4">
+      <div className="card">
+       <div className="card-image">
+
+       </div>
+       <div className="card-content">
+        <p>Support for Upcoming Project</p>
+       </div>
+       <div className="card-action">
+        <PaymentButton />
+       </div>
+      </div>
+     </div>
+
+     <div className="col s12 m6 l4">
+      <div className="card">
+       <div className="card-image">
+
+       </div>
+       <div className="card-content">
+        <p>Save a child/scholarship</p>
+       </div>
+       <div className="card-action">
+        <PaymentButton />
+       </div>
+      </div>
+     </div>
+     <div className="col s12 m6 l4">
+      <div className="card">
+       <div className="card-image">
+
+       </div>
+       <div className="card-content">
+        <p>Grant</p>
+       </div>
+       <div className="card-action">
+        <PaymentButton />
+       </div>
+      </div>
+     </div>
+    </div> */}
+
    </div>
   </div>
  )

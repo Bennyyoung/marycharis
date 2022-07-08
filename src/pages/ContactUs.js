@@ -21,11 +21,11 @@ export default function ContactUs() {
  return (
   <div className="container row">
    <div className="col s12 m6 l7">
-    <h2><strong>Get in touch</strong></h2>
+    <h2><strong>Get in touch/Member</strong></h2>
     <address>
      <p>MARYCHARIS BENEVOLENCE FOUNDATION</p>
-     <p><strong>Phone no 1: </strong>070 5501-8922</p>
-     <p><strong>Phone no 2: </strong>091-3444-5646</p>
+     <p><strong>Phone no 1: </strong>+234 70 5501-8922</p>
+     <p><strong>Phone no 2: </strong>+234 91 3444-5646</p>
      <p><strong>Email: </strong>marycharisfoundation@gmail.com</p>
 
      <p><strong>Address: </strong><span>MBF Secretariat Phase 2 Block F plot 5b Magbon, Imeke, off - Aradagun Iworo-Ajido Road, Badagry Lagos.</span></p>
@@ -45,7 +45,7 @@ export default function ContactUs() {
        <div className="row">
         <div className="input-field col s12">
          <label htmlFor="name">Name</label>
-         <input id="name" type="text" name="name" type="text" className="active validate" required />
+         <input id="name" type="text" name="name" className="active validate" required />
          <ValidationError
           prefix="Name"
           field="name"
