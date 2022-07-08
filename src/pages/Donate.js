@@ -28,7 +28,7 @@ export default function Donate() {
    </div>
 
    <div className="col s12 m6 l6">
-    <h4 style={{ padding: '6rem 0 1rem 0' }}><strong>Donate (₦)</strong></h4>
+    <h4 style={{ padding: '6rem 0 1rem 0' }}><strong>Domestic Donatation (₦)</strong></h4>
     <div className="row">
      <div className="col s12 m6 l4">
       <div className="card">
