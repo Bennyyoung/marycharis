@@ -24,6 +24,11 @@ const OtherArticles = () => {
       @Marycharis Foundation They weren't Blessed with MBF'S gifts alone, They were also Blessed spiritually (Words of encouragement/Prayer).
      </a>
     </div>
+    <div className='col s6'>
+     5.) <a href="https://www.facebook.com/reel/528387512587193?extid=chYV2B&fs=e">
+     @MBF'S FOOD-F.A.I.R DAY, Afromedia/Ajangbadi, Lagos - 30/12/2022
+     </a>
+    </div>
    </div>
   </div>
  )
