@@ -10,6 +10,7 @@ import 'materialize-css/dist/css/materialize.min.css';
 import M from 'materialize-css/dist/js/materialize.min.js';
 
 import 'video-react/dist/video-react.css'
+import Talent from './pages/Children';
 
 const App = () => {
   useEffect(() => {
@@ -28,6 +29,7 @@ const App = () => {
         <Route exact path="/faq" component={FAQ}/>
         <Route exact path="/upcoming-event" component={UpcomingEvent}/>
         <Route exact path="/gallery" component={Gallery} />
+        <Route exact path="/talent-hunt" component={Talent} />
       </Switch>
       <Footer />
     </Router>

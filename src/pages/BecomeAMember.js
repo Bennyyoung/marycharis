@@ -5,7 +5,7 @@ import { useForm, ValidationError } from '@formspree/react';
 import { Link } from 'react-router-dom'
 
 const BecomeAMember = () => {
-  const [value, setValue] = useState();
+  const [value, setValue] = useState('');
   const [state, handleSubmit] = useForm("mqknpeln");
   if (state.succeeded) {
     return (

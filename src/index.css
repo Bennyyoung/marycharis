@@ -179,3 +179,26 @@ main {
   color: var(--clr-primary-1);
 }
 
+.talent-cover{
+  position:absolute;
+  opacity: 0.2;
+}
+
+.talent-logo{
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 20%;
+  align-items: center;
+
+}
+
+.talent-logo p{
+  font-size: 1rem;
+  text-align: left;
+}
+
+.talent-img{
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+}

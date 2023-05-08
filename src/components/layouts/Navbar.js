@@ -50,6 +50,9 @@ const Navbar = () => {
                 <Link to='/upcoming-event'>Upcoming Event</Link>
               </li>
               <li>
+                <Link to='/talent-hunt'>MCF Talent Hunt</Link>
+              </li>
+              <li>
                 <Link to='/become-a-member'>Join Us</Link>
               </li>
               <li>
