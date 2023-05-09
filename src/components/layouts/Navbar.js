@@ -88,6 +88,9 @@ const Navbar = () => {
         <li>
           <Link to='/contact'>Contact Us</Link>
         </li>
+        <li>
+                <Link to='/talent-hunt'>MCF Talent Hunt</Link>
+              </li>
 
       </ul>
     </header>
