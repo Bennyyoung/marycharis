@@ -65,7 +65,7 @@ const Footer = () => {
                 <br />© {new Date().getFullYear()} MARYCHARIS BENEVOLENCE FOUNDATION Inc. All rights
                 reserved.
               </div>
-              <h5 className='white-text'>Other links</h5>
+              <h5 className='white-text' style={{ marginBottom: "30px" }}>Other links</h5>
 
               <ul>
                 <li>
