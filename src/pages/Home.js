@@ -10,9 +10,9 @@ const Home = () => {
   return (
     <main>
       <div style={{ marginTop: "3rem" }}>
-        <Marquee>
+        {/* <Marquee>
           <h3>The coming soon of the Affable summit 2023</h3>
-        </Marquee>
+        </Marquee> */}
       </div>
       {/* <Banner /> */}
       <AidTracker />
