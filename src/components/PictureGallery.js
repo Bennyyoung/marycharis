@@ -1,24 +1,32 @@
-import React from 'react'
-import pictures1 from '../data/pictures1'
+import React from 'react';
+import pictures1 from '../data/pictures1';
 
 const PictureGallery = () => {
- return (
-  <div>
-   <div className='row' style={{marginRight: '5rem', marginLeft: '5rem'}}>
-    <div className="col s12">
-     <p className="flow-text">@Marycharis Foundation With JOHNEVERGREEN</p>
+  return (
+    <div className="container">
+      <div className="row">
+        <div className="col s12">
+          <p className="flow-text">@Marycharis Foundation With JOHNEVERGREEN</p>
+        </div>
+        {pictures1.map((picture) => {
+          return (
+            <div className="col s12 m6" key={picture.id}>
+              <div className="card">
+                <div className="card-image">
+                  <img
+                    className="responsive-img"
+                    style={{ padding: '2rem' }}
+                    src={picture.url}
+                    alt="Gallery Image"
+                  />
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
     </div>
-    <div>
-     {pictures1.map((picture) => {
-      return (
-       <img style={{padding: '2rem'}} key={picture.id} src={picture.url} />
-      )
-     })}
-    </div>
-   </div>
+  );
+};
 
-  </div>
- )
-}
-
-export default PictureGallery
+export default PictureGallery;
