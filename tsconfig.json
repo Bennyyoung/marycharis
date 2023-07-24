@@ -1,0 +1,19 @@
+
+
+
+{
+  "compilerOptions": {
+    "incremental": true,
+    "composite": true,
+    "declaration": true,
+    "sourceMap": true,
+    "target": "es6",
+    "jsx": "react",
+    "module": "commonjs",
+    "outDir": "./",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  }
+}
