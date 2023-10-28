@@ -200,6 +200,25 @@ const About = () => {
             </li>
           </ol>
         </div>
+      <div className="center" style={{ marginTop:"30px" }}>
+        <h4>BOARD OF DIRECTORS</h4>
+        <div style={{ textAlign: 'justify' }}>
+          {/* <p className="flow-text"><b>MBF</b> operational main streams are:
+          </p> */}
+          <ol className="flow-text">
+            <li>Mrs Ayeni-chairman</li>
+            <li>Mrs Emmanuel VC/Convener
+            </li>
+            <li>Mr Michael-Organization Secretary</li>
+            <li>Mr Hodo-ovai'- Board Secretary.</li>
+            <li>Mrs R Babatunde-Board member/PR Officer/Human resource Chief.</li>
+            <li>Mr Razep- Board Member/mass nd social media executive
+            </li>
+            <li>Mr.Hesasa-ovai Emmanuel-Board member/Head,logistics and project manager
+            </li>
+          </ol>
+        </div>
+        </div>
 
       </div>
     </main>
