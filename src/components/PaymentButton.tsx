@@ -1,27 +1,34 @@
 import React, { useState } from 'react';
-import { PaystackButton } from 'react-paystack';
+import { usePaystackPayment, PaystackButton } from 'react-paystack';
 
 const PaymentButton: React.FC = () => {
-    const publicKey = 'pk_live_654e8679915699ce6fdfe6cc46a999b1a1e42961';
-    const [amount, setAmount] = useState(300000);
-    const [email, setEmail] = useState('anonymous@gmail.com');
     const [name, setName] = useState('Anonymous');
+    const [email, setEmail] = useState('anonymous@gmail.com');
+    const [amount, setAmount] = useState(300000);
+    const publicKey = 'pk_live_654e8679915699ce6fdfe6cc46a999b1a1e42961';
     const reference = String((new Date()).getTime())
 
-    const componentProps = {
+    const config = {
         name,
         email,
         amount,
         reference,
-        metadata: {
-            name
-        },
         publicKey,
         text: 'Donate',
         onSuccess: () => alert('Thanks for your Donation'),
         onClose: () => alert("Wait! Don't leave :(")
     };
 
+    const PayButton = () => {
+        const initializePayment = usePaystackPayment(config);
+        return (
+            <div>
+                <button className="btn waves-effect waves-light" onClick={() => {
+                    initializePayment()
+                }}>Pay</button>
+            </div>
+        );
+    };
     return (
         <div>
             <form>
@@ -47,7 +54,7 @@ const PaymentButton: React.FC = () => {
                     onChange={(e) => setEmail(e.target.value)}
                 />
             </form>
-            <PaystackButton className="btn waves-effect waves-light" {...componentProps} />
+            <PayButton />
         </div>
     );
 };
