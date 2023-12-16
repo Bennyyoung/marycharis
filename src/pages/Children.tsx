@@ -13,7 +13,7 @@ interface FormValues {
 }
 
 const Talent: React.FC = () => {
-  const [state, handleSubmit] = useForm<FormValues>("mqknpeln");
+  const [state, handleSubmit] = useForm("mqknpeln");
   const [registerData, setRegisterData] = useState<FormValues>({
     name: "",
     location: "",
@@ -68,7 +68,7 @@ const EventCard: React.FC<EventCardProps> = ({ registerData }) => {
     height: 'auto',
     backgroundColor: "#0954d6",
     color: "#fff",
-    fontWeight: "bold",
+    fontWeight: 500,
     padding: '2% 0%',
     margin: "2% auto",
   };
