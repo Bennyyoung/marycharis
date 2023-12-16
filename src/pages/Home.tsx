@@ -1,8 +1,3 @@
-
-
-
-
-
 import React from 'react';
 import { Banner, AidTracker, CardBlock } from '../components/layouts';
 import HomeMedia from './HomeMedia';

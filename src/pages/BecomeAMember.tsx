@@ -19,7 +19,7 @@ interface FormValues {
 
 const BecomeAMember: React.FC = () => {
   const [value, setValue] = useState('');
-  const [state, handleSubmit] = useForm<FormValues>("mqknpeln");
+  const [state, handleSubmit] = useForm("mqknpeln");
 
   if (state.succeeded) {
     return (
@@ -28,7 +28,7 @@ const BecomeAMember: React.FC = () => {
           <h2 style={{ color: 'white' }}>Thank You For Your Submission</h2>
           <button className="btn waves-effect waves-light">
             <Link style={{ textDecoration: 'none', color: 'white', }} to="/">
-              <span className="material-icons">Return Home</span>
+              <span>Return Home</span>
             </Link>
           </button>
         </div>

@@ -1,10 +1,6 @@
 import React from 'react';
 import Review from './Review';
 
-interface ReviewProps {
-  // Define any props that the Review component uses here (if applicable).
-}
-
 const TestimonialReview: React.FC = () => {
   return (
     <main>

@@ -3,8 +3,9 @@ import reviews from './reviewdata';
 import { FaChevronLeft, FaChevronRight, FaQuoteRight } from 'react-icons/fa';
 
 interface ReviewData {
+  id: number
   name: string;
-  age: number;
+  age: string;
   image: string;
   text: string;
 }

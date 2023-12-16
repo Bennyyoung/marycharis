@@ -14,7 +14,7 @@ interface FormValues {
 
 export default function ContactUs() {
   const [value, setValue] = useState<string | undefined>();
-  const [state, handleSubmit] = useForm<FormValues>("mlezjglv");
+  const [state, handleSubmit] = useForm("mlezjglv");
 
   if (state.succeeded) {
     return (

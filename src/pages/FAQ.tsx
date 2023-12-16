@@ -8,7 +8,7 @@ interface Question {
   title: string;
   info: string;
 }
-
+type TextTransform = 'none' | 'capitalize' | 'uppercase' | 'lowercase' | 'full-width';
 export default function FAQ() {
   const [questions, setQuestions] = useState<Question[]>(data);
 
@@ -24,10 +24,9 @@ export default function FAQ() {
       gap: '1rem 2rem',
     },
     h3: {
-      lineHeight: 1.2,
       fontWeight: 500,
       letterSpacing: '0.1rem',
-      textTransform: 'capitalize',
+      textTransform: 'capitalize' as TextTransform,
       lineHeight: '1.25',
       marginBottom: '0.75rem',
     },

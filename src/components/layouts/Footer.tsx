@@ -5,10 +5,6 @@ import bloomhublogo from '../../data/img/footer/new_logo.jpg';
 import logo from '../../data/img/logo.jpg';
 import SocialMedia from '../SocialMedia';
 
-// Need to added correct .svg file
-// Add sticky footer
-// Add IG and Contribute button
-
 const Footer: React.FC = () => {
   return (
     <footer>
