@@ -6,10 +6,13 @@ const PaymentButton: React.FC = () => {
     const [amount, setAmount] = useState(300000);
     const [email, setEmail] = useState('anonymous@gmail.com');
     const [name, setName] = useState('Anonymous');
+    const reference = String((new Date()).getTime())
 
     const componentProps = {
+        name,
         email,
         amount,
+        reference,
         metadata: {
             name
         },

@@ -1,7 +1,11 @@
 {
-  "name": "tifc",
+  "name": "marycharis",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "18.10.0",
+    "npm": "10.2.3"
+  },
   "dependencies": {
     "@formspree/react": "^2.5.1",
     "@testing-library/jest-dom": "^6.1.5",
