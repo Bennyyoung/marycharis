@@ -5,6 +5,7 @@ interface SingleQuestionProps {
   title: string;
   info: string;
 }
+type TextTransform = 'none' | 'capitalize' | 'uppercase' | 'lowercase' | 'full-width';
 
 function SingleQuestion({ title, info }: SingleQuestionProps): JSX.Element {
   const [showInfo, setShowInfo] = useState(false);
@@ -18,7 +19,7 @@ function SingleQuestion({ title, info }: SingleQuestionProps): JSX.Element {
       boxShadow: '0 5px 15px rgba(0, 0, 0, 0.1)',
     },
     h4: {
-      textTransform: 'none',
+      textTransform: 'none' as TextTransform,
       lineHeight: '1.5',
       marginBottom: '0',
     },
