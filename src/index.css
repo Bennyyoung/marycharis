@@ -2,6 +2,13 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  background-color: #fff;
+  color: #212529;
+}
+
+body.dark-mode {
+  background-color: #292a32;
+  color: #fbfaf8;
 }
 
 /* main {
