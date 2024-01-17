@@ -5,7 +5,7 @@ import { Home, About, ContactUs, Donate, FAQ, BecomeAMember, UpcomingEvent, Gall
 import Navbar from './components/layouts/Navbar';
 import Footer from './components/layouts/Footer';
 
-import 'materialize-css/dist/css/materialize.min.css';
+import '../public/css/materialize.css';
 import M from 'materialize-css/dist/js/materialize.min.js';
 
 import 'video-react/dist/video-react.css';
