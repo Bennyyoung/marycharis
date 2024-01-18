@@ -7,17 +7,19 @@ import TestimonialReview from '../components/TestimonialReview';
 import Marquee from 'react-fast-marquee';
 
 const Home: React.FC = () => {
-return (
-<main>
-<div style={{ marginTop: '3rem' }}>
-<AidTracker />
-      {/* <Campaign /> */}
-      <CardBlock />
-      {/* <TestimonialReview /> */}
-      <HomeMedia />
-</div>
-</main>
-);
+      
+      return (
+            <main>
+                  <div>
+                        <Banner />
+                        {/* <AidTracker /> */}
+                        {/* <Campaign /> */}
+                        <CardBlock />
+                        {/* <TestimonialReview /> */}
+                        <HomeMedia />
+                  </div>
+            </main>
+      );
 };
 
 export default Home;

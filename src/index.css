@@ -11,6 +11,15 @@ body.dark-mode {
   color: #fbfaf8;
 }
 
+.image-slider {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  transition: background-image 2.5s ease-in-out;
+} 
+
 /* main {
   flex: 1 0 auto;
 } */
