@@ -1,25 +1,52 @@
-import React from 'react';
-import one from '../../data/img/banner/1.jpg';
-import two from '../../data/img/banner/2.jpg';
-import three from '../../data/img/banner/3.jpg';
-import five from '../../data/img/banner/5.jpg';
+import React, { useEffect, useState } from 'react';
+import backgroundImg1 from '../../data/img/banner/backgroundImg1.jpeg';
+import backgroundImg2 from '../../data/img/banner/backgroundImg2.jpg';
+import backgroundImg3 from '../../data/img/banner/backgroundImg3.jpg';
+import { Link } from 'react-router-dom';
 
 const Banner: React.FC = () => {
+  const images = [
+    backgroundImg1,
+    // backgroundImg2,
+    backgroundImg3,
+    // Add more image URLs as needed
+  ];
+
+  const text = [
+    <h2 className='banner-text'>
+      Lend the <br /> helping hand <br /> get involved.
+    </h2>,
+    <h2 className='banner-text'>
+      Lend the <br /> helping hand <br /> get involved.
+    </h2>,
+    <h2 className='banner-text'>
+      Donation <br /> Can Change <br /> Life
+    </h2>
+  ]
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentTextIndex, setTextCurrentIndex] = useState(0)
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
+      setTextCurrentIndex((prevIndex) => (prevIndex + 1) % text.length)
+    }, 3000)
+
+    console.log('currentIndex', currentIndex)
+
+    return () => clearInterval(intervalId)
+  }, [currentIndex, images.length])
   return (
-    <div>
-      <br />
-      <div className="carousel carousel-slider center">
-        <div className="carousel-item">
-          <img src={one} alt='' style={{maxWidth: '100%', maxHeight: '100%', height: 'auto', width: 'auto', objectFit: 'cover'}} />
-        </div>
-        <div className="carousel-item">
-          <img src={two} alt='' style={{maxWidth: '100%', maxHeight: '100%', height: 'auto', width: 'auto', objectFit: 'cover'}} />
-        </div>
-        <div className="carousel-item">
-          <img src={three} alt='' style={{maxWidth: '100%', maxHeight: '100%', height: 'auto', width: 'auto', objectFit: 'cover'}} />
-        </div>
-        <div className="carousel-item">
-          <img src={five} alt='' style={{maxWidth: '100%', maxHeight: '100%', height: 'auto', width: 'auto', objectFit: 'cover'}} />
+    <div className="image-slider" style={{ backgroundImage: `url(${images[currentIndex]})` }}>
+      <div style={{ paddingTop: '370px', paddingBottom: '180px', paddingRight: '185px' }}>
+        <div className="justify-content-end row" style={{ justifyContent: 'flex-end' }}>
+          <div className=" text-right col-lg-7" style={{ textAlign: 'right' }}>
+            <p style={{ color: '#fcad30', fontSize: '20px', fontWeight: 600 }}>Help the poor in need</p>
+            {text[currentTextIndex]}
+            <Link to="/donate" data-target=".donate-options" className="scroll-to-target thm-btn ">
+              Start Donating
+            </Link>
+          </div>
         </div>
       </div>
     </div>

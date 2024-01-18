@@ -11,62 +11,27 @@ import wedo_6 from '../../data/img/whatwedo/wedo_6.jpg';
 
 const CardBlock: React.FC = () => {
   return (
-    <div className='container'>
-      <h1 className='center'>What We Do</h1>
-      <br />
-      <div className='row'>
-        <CardBlockItem
-          card='card medium red lighten-2 hoverable'
-          button='waves-effect waves-light red lighten-1 btn-large'
-          image={wedo_1}
-          title='Education'
-          html='/education'
-          content='The Ilahi Foundation has partnered with ISHRAQ Schooling System (ISS) to ensure children from poor backgrounds are receiving proper education in a safe environment. ISS is a non-profit and non-commercial institution which focuses on educating children with less privileges in a competitive standard to make them excel in knowledge, character, and positive action.'
-        />
-        <CardBlockItem
-          card='card medium purple lighten-2 hoverable'
-          button='waves-effect waves-light purple lighten-1 btn-large'
-          image={wedo_2}
-          title='Food Bank'
-          html='/foodbank'
-          content='TIFC is committed to help those in need of food. Our goal is to provide food and supplies to less-fortunate families across the globe. We aim to collect and provide at least $50 a month to ensure the needs of poor families.'
-        />
-        <CardBlockItem
-          card='card medium teal lighten-2 hoverable'
-          button='waves-effect waves-light teal lighten-1 btn-large'
-          image={wedo_3}
-          title='Social Welfare'
-          html='/socialwelfare'
-          content='Our recent and ongoing projects include building wells and providing clean drinking water in poor communities across the globe. TIFC has initiated a water supply system, Sabeel-e-Rehmat (SER), to ensure that clean drinking water is being provided to poor communities around the world.'
-        />
+
+    <section className='video-card-two'>
+      <div className='container'>
+        <div className='inner-container'>
+          <div className='align-items-center row'>
+            <div className="col-lg-3">
+              <div className="video-card-two__box">
+                <img src={wedo_1} style={{ borderRadius: '50%', width: '251px', height: '251px' }} alt="" />
+                <span className="video-card-two__box-btn video-popup" role="button" tabIndex={0}><i className="fa fa-play"></i></span>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <h3>We’re worldwide non-profit charity ogranization.</h3>
+            </div>
+            <div className="col-lg-5">
+              <p>MBF is a non-profit, non-political, dispositioned to do good, charitable, kind, altruistic, individual (s) and groups supported, faith based organization, dedicated to providing needed humanitarian care and to assist the less-privileged, widows, fatherless and orphans (minor) and vulnerable.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className='row'>
-        <CardBlockItem
-          card='card medium blue lighten-2 hoverable'
-          button='waves-effect waves-light blue lighten-1 btn-large'
-          image={wedo_4}
-          title='Water'
-          html='/water'
-          content=''
-        />
-        <CardBlockItem
-          card='card medium green lighten-2 hoverable'
-          button='waves-effect waves-light green lighten-1 btn-large'
-          image={wedo_5}
-          title='Woman Empowerment'
-          html='/womanempowerment'
-          content=''
-        />
-        <CardBlockItem
-          card='card medium brown lighten-2 hoverable'
-          button='waves-effect waves-light brown lighten-1 btn-large'
-          image={wedo_6}
-          title='Qurbani'
-          html='/qurbani'
-          content=''
-        />
-      </div>
-    </div>
+    </section>
   );
 };
 
