@@ -5,9 +5,10 @@ import trade_fair from '../data/img/flair_fair_mcbf.jpeg';
 import home_img from '../data/img/home_img.jpeg';
 import TestimonialReview from '../components/TestimonialReview';
 import Marquee from 'react-fast-marquee';
+import Mission from './Mission';
 
 const Home: React.FC = () => {
-      
+
       return (
             <main>
                   <div>
@@ -15,8 +16,9 @@ const Home: React.FC = () => {
                         {/* <AidTracker /> */}
                         {/* <Campaign /> */}
                         <CardBlock />
+                        <Mission />
                         {/* <TestimonialReview /> */}
-                        <HomeMedia />
+                        {/* <HomeMedia /> */}
                   </div>
             </main>
       );

@@ -3,6 +3,97 @@
  * Copyright 2014-2017 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+
+@media (min-width: 992px) {
+  .col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-lg-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+
+.col-lg-4 h3 {
+  margin: 0;
+  font-size: 36px !important;
+  line-height: 50px !important;
+  letter-spacing: -.05em !important;
+  font-weight: 700 !important;
+  color: #fff;
+  padding-left: 22px !important;
+  position: relative !important;
+  left: 30px !important;
+}
+
+@media (min-width: 992px) {
+  .col-lg-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+}
+
+.col-lg-5 {
+  margin: 0;
+  padding-left: 70px;
+  font-size: 18px;
+  line-height: 34px;
+  font-weight: 500;
+  color: #9e9e9e;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.video-card-two {
+  padding-top: 100px;
+  position: relative;
+  z-index: 11;
+}
+
+.video-card-two .inner-container {
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  background-color: #242323;
+  padding: 20px 65px 20px 20px;
+  position: relative;
+  border-bottom-left-radius: 145.5px;
+  border-top-left-radius: 145.5px;
+  z-index: 11;
+}
+
+.block-title {
+  margin-bottom: 60px;
+  text-align: center;
+  padding-top: 120px;
+}
+
+.block-title p {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #5366c2;
+  margin: 0;
+  line-height: 1;
+}
+
+
+
+
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -2066,8 +2157,9 @@
 }
 
 .grey-text.text-lighten-3 {
-  color: #212529 !important; 
+  color: #212529 !important;
 }
+
 .grey-text.text-lighten-3.dark-mode {
   color: #fbfaf8 !important;
 }
@@ -2900,6 +2992,15 @@ ul.staggered-list li {
   }
 }
 
+.linkNav {
+  background-color: #292a32;
+
+}
+
+.linkNav.dark-mode {
+  background-color: lightgrey;
+}
+
 @media only screen and (max-width: 992px) {
   .hide-on-med-and-down {
     display: none !important;
@@ -2999,7 +3100,7 @@ ul.staggered-list li {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 10px 0px;
-  color: #212529; 
+  color: #212529;
   background-color: rgba(51, 51, 51, 0.08);
 }
 
@@ -4570,6 +4671,7 @@ nav .brand-logo {
   font-size: 2.1rem;
   padding: 0;
 }
+
 nav .brand-logo.dark-mode {
   position: absolute;
   color: #fbfaf8;
@@ -4649,12 +4751,12 @@ nav ul a {
   font-size: 1rem;
   display: block;
   padding: 0 15px;
-  color: #212529;
+  color: #fbfaf8;
   cursor: pointer;
 }
 
 nav ul a.dark-mode {
-  color: #fbfaf8;
+  color: #212529;
   -webkit-transition: background-color .3s;
   transition: background-color .3s;
   font-size: 1rem;

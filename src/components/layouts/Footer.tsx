@@ -82,12 +82,12 @@ const Footer: React.FC = () => {
               </ul>
               <div className='col s6 m6 l6'>
                 <br />
-                <a href='http://www.bloomhubng.com/'>
+                <a href='https://www.forkhive.com/'>
                   <img className='right' src={bloomhublogo} alt='' width='50px' height='50px' />
                 </a>
-                <a className='right' href='http://www.bloomhubng.com/'>
+                <a className='right' href='https://www.forkhive.com/'>
                   <br />
-                  Powered by bloomhubng &nbsp;
+                  Powered by Forkhive &nbsp;
                 </a>
               </div>
             </div>

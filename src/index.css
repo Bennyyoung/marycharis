@@ -17,8 +17,34 @@ body.dark-mode {
   background-position: center;
   width: 100vw;
   height: 100vh;
+  transform: scale(1);
   transition: background-image 2.5s ease-in-out;
 } 
+
+.banner-text {
+  font-size: 100px; 
+  color: #fff; 
+  font-weight: 700; 
+  letter-spacing: -.04rem;
+  /* transform: translateY(90px); */
+  transition: transform 2s ease,opacity 2s ease;
+}
+
+.thm-btn {
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--thm-font);
+  padding: 16.5px 39.5px;
+  transition: .5s;
+  background-color: #fcad30;
+  color: #fff;
+  border-bottom-left-radius: 31.5px;
+  border-top-left-radius: 31.5px;
+}
 
 /* main {
   flex: 1 0 auto;
