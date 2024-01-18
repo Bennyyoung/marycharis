@@ -26,8 +26,9 @@ body.dark-mode {
   color: #fff; 
   font-weight: 700; 
   letter-spacing: -.04rem;
+  transform: scale(1);
   /* transform: translateY(90px); */
-  transition: transform 2s ease,opacity 2s ease;
+  transition: transform 5.5s ease-in-out;
 }
 
 .thm-btn {
