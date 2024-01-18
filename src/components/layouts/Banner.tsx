@@ -41,7 +41,7 @@ const Banner: React.FC = () => {
       <div style={{ paddingTop: '370px', paddingBottom: '180px', paddingRight: '185px' }}>
         <div className="justify-content-end row" style={{ justifyContent: 'flex-end' }}>
           <div className=" text-right col-lg-7" style={{ textAlign: 'right' }}>
-            <p style={{ color: '#fcad30', fontSize: '20px', fontWeight: '600' }}>Help the poor in need</p>
+            <p style={{ color: '#fcad30', fontSize: '20px', fontWeight: 600 }}>Help the poor in need</p>
             {text[currentTextIndex]}
             <Link to="/donate" data-target=".donate-options" className="scroll-to-target thm-btn ">
               Start Donating
