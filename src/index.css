@@ -21,6 +21,13 @@ body.dark-mode {
   transition: background-image 2.5s ease-in-out;
 } 
 
+@media (max-width: 575px) {
+  .image-slider {
+  height: 70vh;
+
+  }
+}
+
 .banner-text {
   font-size: 100px; 
   color: #fff; 
@@ -30,6 +37,18 @@ body.dark-mode {
   /* transform: translateY(90px); */
   transition: transform 5.5s ease-in-out;
 }
+@media (max-width: 575px) {
+  .banner-text {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 375px) {
+  .banner-text {
+    font-size: 36px;
+  }
+}
+
 
 .thm-btn {
   display: inline-block;
