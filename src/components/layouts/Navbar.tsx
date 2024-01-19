@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
   return (
     <header>
       <div>
-        <nav style={{ backgroundColor: 'inherit', height: '10rem', width: '90vw' }}>
+        <nav style={{ backgroundColor: 'inherit'}}>
           <div className={`nav-wrapper ${darkMode ? 'dark-mode' : ''}`}>
             <Link to='/' className={`brand-logo hide-on-small-only ${darkMode ? 'dark-mode' : ''}`}>
               <div style={{ display: 'flex', marginTop: '3rem', marginLeft: '8rem' }}>
@@ -66,45 +66,52 @@ const Navbar: React.FC = () => {
 
 
           </div>
-      <Link
-        to='/'
-        className='brand-logo show-on-small hide-on-med-and-up'
-      >
-        MBF
-      </Link>
+          <Link
+            to='/'
+            className='brand-logo show-on-small hide-on-med-and-up'
+          >
+            MBF
+          </Link>
 
-      <Link to='/' data-target='mobile-demo' className='sidenav-trigger'>
-        <i className='material-icons'>menu</i>
-      </Link>
+          <Link to='/' data-target='mobile-demo' className={`sidenav-trigger ${darkMode ? 'dark-mode' : ''}`}>
+            <i className={`material-icons ${darkMode ? 'dark-mode' : ''}`}>menu</i>
+          </Link>
 
 
-      <ul className='sidenav ' id='mobile-demo'>
-        <li>
-          <Link to='/'>Home</Link>
-        </li>
-        <li>
-          <Link to='/about'>About</Link>
-        </li>
-        <li>
-          <Link to='/gallery'>Gallery</Link>
-        </li>
-        <li>
-          <Link to='/upcoming-event'>Upcoming Event</Link>
-        </li>
-        <li>
-          <Link to='/become-a-member'>Join Us</Link>
-        </li>
-        <li>
-          <Link to='/donate'>Donate</Link>
-        </li>
-        <li>
-          <Link to='/contact'>Contact Us</Link>
-        </li>
-        <li>
-          <Link to='/talent-hunt'>MCF Talent Hunt</Link>
-        </li>
+          <ul className={`sidenav ${darkMode ? 'dark-mode' : ''}`} id='mobile-demo'>
+            <div style={{ display: 'flex' }}>
+              <div style={{flex: 5}}></div>
+              <div style={{flex: 1}}>
+                <DarkModeToggle />
+              </div>
+            </div>
 
-      </ul>
+            <li>
+              <Link to='/' className={`${darkMode ? 'dark-mode' : ''}`}>Home</Link>
+            </li>
+            <li>
+              <Link to='/about' className={`${darkMode ? 'dark-mode' : ''}`}>About</Link>
+            </li>
+            <li>
+              <Link to='/gallery' className={`${darkMode ? 'dark-mode' : ''}`}>Gallery</Link>
+            </li>
+            <li>
+              <Link to='/upcoming-event' className={`${darkMode ? 'dark-mode' : ''}`}>Upcoming Event</Link>
+            </li>
+            <li>
+              <Link to='/become-a-member' className={`${darkMode ? 'dark-mode' : ''}`}>Join Us</Link>
+            </li>
+            <li>
+              <Link to='/donate' className={`${darkMode ? 'dark-mode' : ''}`}>Donate</Link>
+            </li>
+            <li>
+              <Link to='/contact' className={`${darkMode ? 'dark-mode' : ''}`}>Contact Us</Link>
+            </li>
+            <li>
+              <Link to='/talent-hunt' className={`${darkMode ? 'dark-mode' : ''}`}>MCF Talent Hunt</Link>
+            </li>
+
+          </ul>
         </nav>
       </div>
 

@@ -4653,14 +4653,28 @@ table span.badge {
     left: 100%;
   }
 }
-
 nav {
   color: #fff;
   background-color: #ee6e73;
-  width: 100%;
-  height: 56px;
+  height: 10rem;
+  width: 100vw;
   line-height: 56px;
 }
+
+/* @media (min-width: 767px) {
+  nav {
+    width: 100%;
+    height: 56px;
+  }
+} */
+@media (max-width: 767px) {
+  nav {
+    width: 100%;
+    height: 56px;
+  }
+}
+
+
 
 nav.nav-extended {
   height: auto;
@@ -4679,6 +4693,14 @@ nav.nav-extended .nav-content {
 nav a {
   color: #fff;
 }
+.material-icons.dark-mode {
+  color: #fff;
+}
+
+.material-icons {
+  color: black;
+}
+
 
 nav i,
 nav [class^="mdi-"],
@@ -4694,14 +4716,22 @@ nav .nav-wrapper {
   position: relative;
   height: 100%;
   background-color: #fff;
-
 }
 
 nav .nav-wrapper.dark-mode {
   position: relative;
   height: 100%;
   background-color: #1d1c1c;
+}
 
+@media only screen and (min-width: 337px) {
+  nav .nav-wrapper {
+    height: 0;
+  }
+  
+  nav .nav-wrapper.dark-mode {
+    height: 0;
+  }
 }
 
 @media only screen and (min-width: 993px) {
@@ -4915,7 +4945,7 @@ nav .input-field label.active i {
   nav .nav-wrapper i,
   nav a.sidenav-trigger,
   nav a.sidenav-trigger i {
-    height: 64px;
+    /* height: 64px; */
     line-height: 64px;
   }
 
@@ -8057,7 +8087,29 @@ input[type=range]::-ms-thumb {
   height: calc(100% + 60px);
   height: -moz-calc(100%);
   padding-bottom: 60px;
-  background-color: #fff;
+  background-color: #292a32;
+  z-index: 999;
+  overflow-y: auto;
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateX(-105%);
+  transform: translateX(-105%);
+}
+.sidenav.dark-mode {
+  position: fixed;
+  width: 300px;
+  left: 0;
+  top: 0;
+  margin: 0;
+  color: #fbfaf8 !important;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  height: 100%;
+  height: calc(100% + 60px);
+  height: -moz-calc(100%);
+  padding-bottom: 60px;
+  background-color: lightgrey;
   z-index: 999;
   overflow-y: auto;
   will-change: transform;
@@ -8090,7 +8142,7 @@ input[type=range]::-ms-thumb {
 }
 
 .sidenav li>a {
-  color: rgba(0, 0, 0, 0.87);
+  color: inherit;
   display: block;
   font-size: 14px;
   font-weight: 500;
