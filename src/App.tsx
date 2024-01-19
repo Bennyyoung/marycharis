@@ -14,6 +14,9 @@ import Talent from './pages/Children';
 const App: React.FC = () => {
     useEffect(() => {
         M.AutoInit();
+
+        const sideNav = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sideNav, {});
     });
 
     return (

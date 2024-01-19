@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../data/img/logo.jpg';
 import marycharisLogo from '../../data/img/marycharisLogo.jpg';
@@ -8,19 +8,20 @@ import { RootState } from '../../redux/store';
 
 
 const Navbar: React.FC = () => {
+
   const darkMode = useSelector((state: RootState) => state.darkMode.darkMode)
   return (
     <header>
-      <div className='navbar-fixed '>
+      <div>
         <nav style={{ backgroundColor: 'inherit', height: '10rem', width: '90vw' }}>
           <div className={`nav-wrapper ${darkMode ? 'dark-mode' : ''}`}>
             <Link to='/' className={`brand-logo hide-on-small-only ${darkMode ? 'dark-mode' : ''}`}>
-              <div style={{ display: 'flex', marginTop: '3rem', marginLeft: '15rem' }}>
+              <div style={{ display: 'flex', marginTop: '3rem', marginLeft: '8rem' }}>
                 <div style={{ width: '10%' }}>
                   <img src={marycharisLogo} alt="logo" height="64px" width="80px" />
 
                 </div>
-                <h6 style={{ paddingLeft: '5rem', marginTop: '1.5rem' }}>
+                <h6 style={{ paddingLeft: '3rem', marginTop: '1.5rem' }}>
                   MARYCHARIS BENEVOLENCE FOUNDATION
                 </h6>
               </div>
@@ -33,7 +34,7 @@ const Navbar: React.FC = () => {
                 {/* Socials */}
                 <div></div>
               </div>
-              <ul style={{ borderRadius: '39.5px 0 0 39.5px', paddingLeft: '50px', paddingRight: '50px', border: '1px solid black' }} id='nav-mobile' className={`right hide-on-med-and-down linkNav ${darkMode ? 'dark-mode' : '' }`}>
+              <ul style={{ borderRadius: '39.5px 0 0 39.5px', paddingLeft: '50px', paddingRight: '50px', border: '1px solid black' }} id='nav-mobile' className={`right hide-on-med-and-down linkNav ${darkMode ? 'dark-mode' : ''}`}>
                 <DarkModeToggle />
                 <li>
                   <Link to='/' className={`${darkMode ? 'dark-mode' : ''}`}>Home</Link>
@@ -65,12 +66,6 @@ const Navbar: React.FC = () => {
 
 
           </div>
-        </nav>
-      </div>
-
-
-
-
       <Link
         to='/'
         className='brand-logo show-on-small hide-on-med-and-up'
@@ -81,11 +76,6 @@ const Navbar: React.FC = () => {
       <Link to='/' data-target='mobile-demo' className='sidenav-trigger'>
         <i className='material-icons'>menu</i>
       </Link>
-
-
-
-
-
 
 
       <ul className='sidenav ' id='mobile-demo'>
@@ -115,6 +105,12 @@ const Navbar: React.FC = () => {
         </li>
 
       </ul>
+        </nav>
+      </div>
+
+
+
+
     </header>
   );
 };

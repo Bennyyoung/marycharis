@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Banner: React.FC = () => {
   const images = [
     backgroundImg1,
-    // backgroundImg2,
+    backgroundImg2,
     backgroundImg3,
     // Add more image URLs as needed
   ];
@@ -38,7 +38,7 @@ const Banner: React.FC = () => {
   }, [currentIndex, images.length])
   return (
     <div className="image-slider" style={{ backgroundImage: `url(${images[currentIndex]})` }}>
-      <div style={{ paddingTop: '370px', paddingBottom: '180px', paddingRight: '185px' }}>
+      <div className='slider-container'>
         <div className="justify-content-end row" style={{ justifyContent: 'flex-end' }}>
           <div className=" text-right col-lg-7" style={{ textAlign: 'right' }}>
             <p style={{ color: '#fcad30', fontSize: '20px', fontWeight: 600 }}>Help the poor in need</p>
