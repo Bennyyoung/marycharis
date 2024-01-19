@@ -3399,8 +3399,8 @@ th {
 
 .video-container {
   position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
+  /* padding-bottom: 56.25%;
+  height: 100%; */
   overflow: hidden;
 }
 
@@ -4653,6 +4653,7 @@ table span.badge {
     left: 100%;
   }
 }
+
 nav {
   color: #fff;
   background-color: #ee6e73;
@@ -4693,6 +4694,7 @@ nav.nav-extended .nav-content {
 nav a {
   color: #fff;
 }
+
 .material-icons.dark-mode {
   color: #fff;
 }
@@ -4716,6 +4718,7 @@ nav .nav-wrapper {
   position: relative;
   height: 100%;
   background-color: #fff;
+  display: flex
 }
 
 nav .nav-wrapper.dark-mode {
@@ -4724,11 +4727,28 @@ nav .nav-wrapper.dark-mode {
   background-color: #1d1c1c;
 }
 
+nav .nav-wrapper.dark-mode .right {
+  margin-left: 60rem;
+  width: 62rem;
+}
+
+nav .nav-wrapper h6 {
+  color: #000
+}
+nav .nav-wrapper.dark-mode h6 {
+  color: #fff
+}
+
+nav .nav-wrapper .right {
+  margin-left: 20rem;
+  width: 62rem;
+}
+
 @media only screen and (min-width: 337px) {
   nav .nav-wrapper {
     height: 0;
   }
-  
+
   nav .nav-wrapper.dark-mode {
     height: 0;
   }
@@ -4762,6 +4782,7 @@ nav .brand-name {
   padding-left: 10rem;
 
 }
+
 nav .brand-name.dark-mode {
   position: absolute;
   color: #fff;
@@ -8104,6 +8125,7 @@ input[type=range]::-ms-thumb {
   -webkit-transform: translateX(-105%);
   transform: translateX(-105%);
 }
+
 .sidenav.dark-mode {
   position: fixed;
   width: 300px;

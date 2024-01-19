@@ -66,6 +66,7 @@ const Navbar: React.FC = () => {
 
 
           </div>
+          
           <Link
             to='/'
             className={`brand-name show-on-small hide-on-med-and-up ${darkMode ? 'dark-mode' : ''}`}
