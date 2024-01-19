@@ -68,7 +68,7 @@ const Navbar: React.FC = () => {
           </div>
           <Link
             to='/'
-            className='brand-logo show-on-small hide-on-med-and-up'
+            className={`brand-name show-on-small hide-on-med-and-up ${darkMode ? 'dark-mode' : ''}`}
           >
             MBF
           </Link>

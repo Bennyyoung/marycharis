@@ -4753,13 +4753,21 @@ nav .sidenav-trigger i {
   line-height: 56px;
 }
 
-nav .brand-logo {
+nav .brand-name {
   position: absolute;
   color: #212529;
 
   display: inline-block;
   font-size: 2.1rem;
-  padding: 0;
+  padding-left: 10rem;
+
+}
+nav .brand-name.dark-mode {
+  position: absolute;
+  color: #fff;
+  display: inline-block;
+  padding-left: 10rem;
+  font-size: 2.1rem;
 }
 
 nav .brand-logo.dark-mode {
