@@ -8,27 +8,24 @@ interface Picture {
 
 const PictureGallery: React.FC = () => {
   return (
-    <div className="container">
+    <>
       <div className="row">
         <div className="col s12">
           <p className="flow-text">@Marycharis Foundation With JOHNEVERGREEN</p>
         </div>
-        {pictures1.map((picture: Picture) => (
-          <div className="col s12 m6" key={picture.id}>
-            <div className="card">
-              <div className="card-image">
-                <img
-                  className="responsive-img"
-                  style={{ padding: '2rem' }}
-                  src={picture.url}
-                  alt="Gallery Image"
-                />
-              </div>
+        <div className='gallery-3-col'>
+          {pictures1.map((picture: Picture) => (
+            <div className='gallery-card' key={picture.id}>
+              <img
+                className="responsive-img"
+                src={picture.url}
+                alt="Gallery Image"
+              />
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
