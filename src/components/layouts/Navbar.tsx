@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
   return (
     <header>
       <div>
-        <nav style={{ backgroundColor: 'inherit'}}>
+        <nav className={`${darkMode ? 'dark-mode' : ''}`}>
           <div className={`nav-wrapper ${darkMode ? 'dark-mode' : ''}`}>
             <Link to='/' className={`brand-logo hide-on-small-only ${darkMode ? 'dark-mode' : ''}`}>
               <div style={{ display: 'flex', marginTop: '3rem', marginLeft: '8rem' }}>

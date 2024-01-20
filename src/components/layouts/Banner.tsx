@@ -21,6 +21,10 @@ const Banner: React.FC = () => {
     </h2>,
     <h2 className='banner-text'>
       Donation <br /> Can Change <br /> Life
+    </h2>,
+    <h2 className='banner-text'>
+      Our fingerprints on <br /> the
+      lives we touch <br />never fade.
     </h2>
   ]
   const [currentIndex, setCurrentIndex] = useState(0)
