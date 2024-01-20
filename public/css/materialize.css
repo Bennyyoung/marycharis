@@ -4725,16 +4725,23 @@ nav .nav-wrapper.dark-mode {
   position: relative;
   height: 100%;
   background-color: #1d1c1c;
+  display: contents;
+
+}
+
+.nav-wrapper div {
+
 }
 
 nav .nav-wrapper.dark-mode .right {
-  margin-left: 60rem;
+  /* margin-left: 60rem; */
   width: 62rem;
 }
 
 nav .nav-wrapper h6 {
   color: #000
 }
+
 nav .nav-wrapper.dark-mode h6 {
   color: #fff
 }
@@ -4806,7 +4813,7 @@ nav .brand-logo.center {
   transform: translateX(-50%);
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1199px) {
   nav .brand-logo {
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -8104,50 +8111,53 @@ input[type=range]::-ms-thumb {
   border-left: 2px solid #ee6e73;
 }
 
-.sidenav {
-  position: fixed;
-  width: 300px;
-  left: 0;
-  top: 0;
-  margin: 0;
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-  height: 100%;
-  height: calc(100% + 60px);
-  height: -moz-calc(100%);
-  padding-bottom: 60px;
-  background-color: #292a32;
-  z-index: 999;
-  overflow-y: auto;
-  will-change: transform;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform: translateX(-105%);
-  transform: translateX(-105%);
+@media only screen and (min-width: 200px) and (max-width: 1999px) {
+  .sidenav {
+    position: fixed;
+    width: 300px;
+    left: 0;
+    top: 0;
+    margin: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    height: 100%;
+    height: calc(100% + 60px);
+    height: -moz-calc(100%);
+    padding-bottom: 60px;
+    background-color: #292a32;
+    z-index: 999;
+    overflow-y: auto;
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateX(-105%);
+    transform: translateX(-105%);
+  }
+
+  .sidenav.dark-mode {
+    position: fixed;
+    width: 300px;
+    left: 0;
+    top: 0;
+    margin: 0;
+    color: #fbfaf8 !important;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    height: 100%;
+    height: calc(100% + 60px);
+    height: -moz-calc(100%);
+    padding-bottom: 60px;
+    background-color: lightgrey;
+    z-index: 999;
+    overflow-y: auto;
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateX(-105%);
+    transform: translateX(-105%);
+  }
 }
 
-.sidenav.dark-mode {
-  position: fixed;
-  width: 300px;
-  left: 0;
-  top: 0;
-  margin: 0;
-  color: #fbfaf8 !important;
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-  height: 100%;
-  height: calc(100% + 60px);
-  height: -moz-calc(100%);
-  padding-bottom: 60px;
-  background-color: lightgrey;
-  z-index: 999;
-  overflow-y: auto;
-  will-change: transform;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform: translateX(-105%);
-  transform: translateX(-105%);
-}
 
 .sidenav.right-aligned {
   right: 0;
