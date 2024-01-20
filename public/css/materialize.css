@@ -3146,7 +3146,7 @@ ul.staggered-list li {
   justify-content: space-between;
   padding: 10px 0px;
   color: #212529;
-  background-color: rgba(51, 51, 51, 0.08);
+  background-color: #fcad30;
 }
 
 .page-footer .footer-copyright.dark-mode {
@@ -4653,14 +4653,22 @@ table span.badge {
     left: 100%;
   }
 }
-
 nav {
   color: #fff;
-  background-color: #ee6e73;
+  background-color: #fcad30;
   height: 10rem;
   width: 100vw;
   line-height: 56px;
 }
+
+nav.dark-mode {
+  color: #fff;
+  background-color: #292a32;
+  height: 10rem;
+  width: 100vw;
+  line-height: 56px;
+}
+
 
 /* @media (min-width: 767px) {
   nav {
