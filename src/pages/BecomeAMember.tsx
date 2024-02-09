@@ -39,7 +39,7 @@ const BecomeAMember: React.FC = () => {
 
   return (
     <div className="container">
-      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+      <div className='row'>
         <div className='col-lg-5' style={{ marginRight: '2rem' }}>
           <h4>Become a Member or Volunteer</h4>
         </div>
@@ -48,7 +48,7 @@ const BecomeAMember: React.FC = () => {
           <form className="col s12" onSubmit={handleSubmit}>
 
             <div className="row">
-              <div className="input-field col s6">
+              <div className="input-field col s6 s12">
                 <label htmlFor="first_name">First Name</label>
                 <input id="name" name="first_name" type="text" className="active validate" required />
                 <ValidationError
@@ -58,7 +58,7 @@ const BecomeAMember: React.FC = () => {
                 />
               </div>
 
-              <div className="input-field col s6">
+              <div className="input-field col s6 s12">
                 <label htmlFor="last_name">Last Name</label>
                 <input id="name" name="last_name" type="text" className="active validate" required />
                 <ValidationError
@@ -70,7 +70,7 @@ const BecomeAMember: React.FC = () => {
             </div>
 
             <div className="row">
-              <div className="input-field col s6">
+              <div className="input-field col s6 s12">
                 <label>Email</label>
                 <input id="email" type="email" name="email" className="validate" required />
               </div>
@@ -80,7 +80,7 @@ const BecomeAMember: React.FC = () => {
                 errors={state.errors}
               />
 
-              <div className="input-field col s6">
+              <div className="input-field col s6 s12">
                 <PhoneInput
                   international
                   value={value}
@@ -98,7 +98,7 @@ const BecomeAMember: React.FC = () => {
             </div>
 
             <div className="row">
-              <div className="input-field col s6">
+              <div className="input-field col s6 s12">
                 <label>Address 1</label>
                 <textarea id="address1" className="materialize-textarea" name="address_1"></textarea>
               </div>
@@ -108,7 +108,7 @@ const BecomeAMember: React.FC = () => {
                 errors={state.errors}
               />
 
-              <div className="input-field col s6">
+              <div className="input-field col s6 s12">
                 <label>Address 2</label>
                 <textarea id="address2" className="materialize-textarea" name="address_2"></textarea>
                 <ValidationError
@@ -120,7 +120,7 @@ const BecomeAMember: React.FC = () => {
             </div>
 
             <div className="row">
-              <div className="input-field col s6">
+              <div className="input-field col s6 s12">
                 <label>City</label>
                 <input id="city" type="text" name="city" className="active validate" />
                 <ValidationError
@@ -130,7 +130,7 @@ const BecomeAMember: React.FC = () => {
                 />
               </div>
 
-              <div className="input-field col s6">
+              <div className="input-field col s6 s12">
                 <label>State/Province</label>
                 <input id="state_or_province" type="text" name="state_or_province" className="active validate" />
                 <ValidationError
@@ -151,7 +151,7 @@ const BecomeAMember: React.FC = () => {
             
           </div> */}
             <div>
-              <div className="input-field col s6">
+              <div className="input-field col s6 s12">
                 <label>Postal/Zip Code</label>
                 <input id="postal_zipcode" type="number" name="postal_zipcode" />
                 <ValidationError
@@ -167,7 +167,7 @@ const BecomeAMember: React.FC = () => {
             <h5>Ways to participate</h5>
             <div className="row">
 
-              <p className="col s6">
+              <p className="col s6 s12">
                 <label>
                   <input id="become_a_member" type="radio" name="Become_A_Member" className="with-gap" />
                   <ValidationError
@@ -178,7 +178,7 @@ const BecomeAMember: React.FC = () => {
                   <span>Become a Member</span>
                 </label>
               </p>
-              <p className="col s6">
+              <p className="col s6 s12">
                 <label>
                   <input type="radio" name="Become A Volunteer" className="with-gap" />
                   <ValidationError
@@ -192,7 +192,7 @@ const BecomeAMember: React.FC = () => {
             </div>
 
 
-            <div className="input-field col s6">
+            <div className="input-field col s6 s12">
               <label>Kindly leave a Comment</label>
               <input id="comments" name="comment" type="text" />
               <ValidationError
@@ -205,7 +205,7 @@ const BecomeAMember: React.FC = () => {
             <h5>Please kindly tick below areas you would like to Support the Organization</h5>
             <div className="row">
 
-              <p className="col m4 s6">
+              <p className="col m4 s6 s12">
                 <label>
                   <input type="checkbox" name="Prayer and Counselling" />
                   <span>Prayer and Counselling</span>
@@ -216,7 +216,7 @@ const BecomeAMember: React.FC = () => {
                   />
                 </label>
               </p>
-              <p className="col m4 s6">
+              <p className="col m4 s6 s12">
                 <label>
                   <input type="checkbox" name="Clothing/Making needs" />
                   <span>Clothing/Making needs</span>
@@ -228,7 +228,7 @@ const BecomeAMember: React.FC = () => {
 
                 </label>
               </p>
-              <p className="col m4 s6">
+              <p className="col m4 s6 s12">
                 <label>
                   <input type="checkbox" name="Voluntary Worker" />
                   <span>Voluntary Worker</span>
@@ -243,7 +243,7 @@ const BecomeAMember: React.FC = () => {
             </div>
 
             <div className="row">
-              <p className="col m4 s6">
+              <p className="col m4 s6 s12">
                 <label>
                   <input type="checkbox" name="Visitation to the needy" />
                   <span>Visitation to the needy</span>
@@ -254,7 +254,7 @@ const BecomeAMember: React.FC = () => {
                   />
                 </label>
               </p>
-              <p className="col m4 s6">
+              <p className="col m4 s6 s12">
                 <label>
                   <input type="checkbox" name="Cheque" />
                   <ValidationError
@@ -265,7 +265,7 @@ const BecomeAMember: React.FC = () => {
                   <span>Cheque</span>
                 </label>
               </p>
-              <p className="col m4 s6">
+              <p className="col m4 s6 s12">
                 <label>
                   <input type="checkbox" name="Education" />
                   <ValidationError
@@ -280,7 +280,7 @@ const BecomeAMember: React.FC = () => {
             </div>
 
             <div className="row">
-              <p className="col m4 s6">
+              <p className="col m4 s6 s12">
                 <label>
                   <input type="checkbox" name="Hospital of Care giver" />
                   <ValidationError
@@ -298,7 +298,7 @@ const BecomeAMember: React.FC = () => {
             <h5>Method of Donation</h5>
             <div className="row">
 
-              <p className="col m4 s6">
+              <p className="col m4 s6 s12">
                 <label>
                   <input type="radio" name="Monthly" className="with-gap" />
                   <ValidationError
@@ -309,7 +309,7 @@ const BecomeAMember: React.FC = () => {
                   <span>Monthly</span>
                 </label>
               </p>
-              <p className="col m4 s6">
+              <p className="col m4 s6 s12">
                 <label>
                   <input type="radio" name="quarterly" className="with-gap" />
                   <ValidationError
@@ -320,7 +320,7 @@ const BecomeAMember: React.FC = () => {
                   <span>Quarterly</span>
                 </label>
               </p>
-              <p className="col m4 s6">
+              <p className="col m4 s6 s12">
                 <label>
                   <input type="radio" name="yearly" className="with-gap" />
                   <ValidationError
