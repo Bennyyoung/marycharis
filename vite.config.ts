@@ -5,7 +5,16 @@ import svgr from "vite-plugin-svgr";
 
 export default defineConfig({
   base: '/',
-  plugins: [react(), svgr()],
+  plugins: [
+    react(), 
+    svgr(), 
+    [
+      "@locator/babel-jsx/dist",
+      {
+        env: "development",
+      },
+    ]
+  ],
   server: {
     host: 'localhost',
     port: 3000,

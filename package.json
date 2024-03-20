@@ -62,6 +62,7 @@
     ]
   },
   "devDependencies": {
+    "@locator/babel-jsx": "^0.4.3",
     "@types/materialize-css": "^1.0.14",
     "@types/video-react": "^0.15.5"
   }
