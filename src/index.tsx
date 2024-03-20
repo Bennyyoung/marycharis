@@ -6,6 +6,11 @@ import { Provider } from "react-redux"
 import { PersistGate } from "redux-persist/integration/react"
 import { store, persistor } from "./redux/store"
 // import 'bootstrap/dist/css/bootstrap.min.css';
+import setupLocatorUI from "@locator/runtime";
+
+if (process.env.NODE_ENV === "development") {
+  setupLocatorUI();
+}
 
 const root = ReactDOM.createRoot(document.getElementById("root")!);
 root.render(

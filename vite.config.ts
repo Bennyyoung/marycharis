@@ -8,14 +8,6 @@ export default defineConfig({
   plugins: [
     react(), 
     svgr(), 
-    [
-      // @ts-expect-error
-      "@locator/babel-jsx/dist",
-      {
-      // @ts-expect-error
-        env: "development",
-      },
-    ]
   ],
   server: {
     host: 'localhost',
