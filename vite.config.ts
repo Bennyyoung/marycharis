@@ -9,8 +9,10 @@ export default defineConfig({
     react(), 
     svgr(), 
     [
+      // @ts-expect-error
       "@locator/babel-jsx/dist",
       {
+      // @ts-expect-error
         env: "development",
       },
     ]
